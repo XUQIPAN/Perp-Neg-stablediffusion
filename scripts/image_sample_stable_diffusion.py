@@ -5,6 +5,9 @@ import os
 
 import argparse
 
+import sys
+sys.path.append('/research/cbim/medical/qx67/Perp-Neg-stablediffusion')
+
 parser = argparse.ArgumentParser()
 parser.add_argument("--prompt", type=str, default="a forest | a camel",
                     help="use '|' as the delimiter to compose separate sentences.")

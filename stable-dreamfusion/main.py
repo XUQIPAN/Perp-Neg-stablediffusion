@@ -169,6 +169,11 @@ if __name__ == '__main__':
 
     opt = parser.parse_args()
 
+    # for error logging in case of excessive long error messages
+    # Redirect stderr to a file
+    sys.stderr = open('/research/cbim/medical/qx67/err_log_tmp/error_log_2.txt', 'a')
+
+
     if opt.O:
         opt.fp16 = True
         opt.cuda_ray = True

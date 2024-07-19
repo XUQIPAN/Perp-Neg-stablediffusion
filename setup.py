@@ -18,7 +18,7 @@ setup(
         "numpy",
         "blobfile",
         "torchvision",
-        "diffuser",
+        "diffusers",
         "transformers"
     ],
     author="huangjie and reza",

@@ -7,10 +7,10 @@ from torch.autograd import Function
 from torch.autograd.function import once_differentiable
 from torch.cuda.amp import custom_bwd, custom_fwd 
 
-try:
-    import _gridencoder as _backend
-except ImportError:
-    from .backend import _backend
+# try:
+#     import _gridencoder as _backend
+# except ImportError:`
+from .backend import _backend
 
 _gridtype_to_id = {
     'hash': 0,

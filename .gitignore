@@ -1,0 +1,6 @@
+__pycache__
+/research/cbim/medical/qx67/Perp-Neg-stablediffusion/perpneg_diffusion.egg-info/*
+build/*
+perpneg_diffusion.egg-info/*
+perpneg/*
+rotation_perpneg/*

@@ -303,9 +303,9 @@ class PerpStableDiffusionPipeline(DiffusionPipeline):
                     torch.chunk(text_embeddings, chunks=text_embeddings.shape[0], dim=0)):
                 noise_preds.append(self.unet(latent_in, t, encoder_hidden_states=text_embedding_in).sample)
             noise_preds = torch.cat(noise_preds, dim=0)
-            
-            noise_pred_uncond = self.unet(latents, t, encoder_hidden_states=uncond_embeddings).sample
 
+            noise_pred_uncond = self.unet(latents, t, encoder_hidden_states=uncond_embeddings).sample
+            
             # perform guidance
             if do_classifier_free_guidance:
                 

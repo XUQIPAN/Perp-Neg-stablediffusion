@@ -4,3 +4,4 @@ build/*
 perpneg_diffusion.egg-info/*
 perpneg/*
 rotation_perpneg/*
+samples/*
